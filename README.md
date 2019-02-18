@@ -9,18 +9,23 @@ Télécharger le dossier, installer tous les modules (via npm install) puis lanc
 ### `Déroulement du projet / de la réflexion`
 
 **1st step : Intégration de la page et des contenus**
+
 Création globale de la page : header, footer, les 3 différents types de bloc (photo, vidéo, citation)
 
 **2ndt step : Intégration de la grille**
+
 Réflexion sur la structure de la grille (en gardant en mémoire que sa structure sera customisable par l’utilisateur) ainsi que sur le futur slider (slider en horizontal, avec les blocs en trop non visible) 
 
 **3rd step : Initialisation avec React**
+
 Création de la page, des différents components
 
 **4th step**
+
 Application du slider en react
 
 **5th step : Finalisation du projet**
+
 Ajout de fonctionnalités comme l’autoplay, la progress bar
 
 ### `Pour aller plus loin`
