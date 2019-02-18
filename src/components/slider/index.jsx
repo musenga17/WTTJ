@@ -54,7 +54,7 @@ class Slider extends Component {
         rows = Number(parameters.rows);
         this.setState({ rows });
     }
-    //
+    // If there is more slides than one screen
     let numberSlides = sliderContent.length;
     if(numberSlides > (rows * columns) )
     {
@@ -69,6 +69,9 @@ class Slider extends Component {
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
   }
+  /* ================================================
+  Update states at componentDidMount and Resize event
+  ================================================ */
   updateWindowDimensions(rows, columns) {
     let widthSlide =  window.innerWidth / columns;
     let numberSlides = sliderContent.length;
@@ -93,6 +96,9 @@ class Slider extends Component {
       }
     }, MILI_SECONDS_AUTOPLAY);
   }
+  /* =====================================================
+  Create Grid according to the parameters Columns and Rows
+  ===================================================== */
   createGrid = (rows, columns) => {
     let numberSlides = sliderContent.length;
     let maxColumns = Math.ceil(numberSlides / rows);
@@ -125,7 +131,7 @@ class Slider extends Component {
       {
           this.autoplayPanel();
       }
-      
+
       switch(direction)
       {
           case "LEFT" :
