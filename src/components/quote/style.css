@@ -1,0 +1,48 @@
+.slider_content_slide_quote span{
+   font-size: 15px;
+   position: absolute;
+   -webkit-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%);
+   filter: blur(0);
+   -webkit-filter: blur(0);
+   top: 60%;
+   left: 50%;
+   width: 90%;
+}
+.slider_content_slide_quote{
+   position: relative;
+   text-align: center;
+}
+.slider_content_slide_quote svg{
+   position: absolute;
+   top: 30%;
+   -webkit-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%);
+}
+.slider_content_slide_quote_black{
+   background-color: rgb(42, 44, 49);
+   color: white;
+}
+.slider_content_slide_quote_green{
+   background-color: rgb(0, 194, 154);
+   color: white;
+}
+.slider_content_slide_quote_green svg{
+   fill : white
+}
+.slider_content_slide_quote_white{
+   background-color: white;
+   color: #333;
+}
+.slider_content_slide_quote_white svg{
+   fill : rgb(42, 44, 49);
+}
+.slider_content_slide_quote svg {
+   overflow: visible;
+}
+.slider_content_slide_quote svg path{
+   transition: all 0.3s ease-in;
+}
+.slider_content_slide_quote:hover svg path{
+   transform: rotate(5deg);
+}

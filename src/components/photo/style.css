@@ -1,0 +1,3 @@
+.slider_content_slide_image:hover .slider_content_slider_zoom{
+   transform: scale3d(1, 1, 1);
+}

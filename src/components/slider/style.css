@@ -1,0 +1,61 @@
+.slider{
+   display: flex;
+   height : 100%;
+   height : calc(100% - 84px);
+   background-color: rgb(42, 44, 49);
+   overflow-x: hidden;
+}
+.slider_content{
+   display: grid;
+   min-height : 100%;
+   grid-template-columns: auto auto auto auto;
+   transition: all 0.6s linear;
+}
+.arrows_navigation{
+  position: absolute;
+  top: 5px;
+  right : 0;
+  height : 42px;
+  z-index: 10;
+}
+.arrows_navigation_left:not(.arrows_navigation_left_disabled):hover,
+.arrows_navigation_right:not(.arrows_navigation_right_disabled):hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+.arrows_navigation_left,
+.arrows_navigation_right{
+    width : 32px;
+    height : 32px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #41434C;
+    text-align: center;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.arrows_navigation_left_disabled,
+.arrows_navigation_right_disabled{
+  background-color: rgba(182, 186, 199, 0.5);
+  cursor: initial;
+}
+.arrows_navigation_left svg,
+.arrows_navigation_right svg{
+  fill : white;
+  width : 10px;
+  margin-top: 7px;
+}
+.progress_bar{
+  position: absolute;
+  z-index: 10;
+  bottom : 42px;
+  height : 2px;
+  width : 100%;
+  background: black;
+}
+.progress_bar_pourcentage{
+  transition: all 0.6s linear;
+  width : 0%;
+  background-color: rgb(0, 194, 154);
+  height : 2px;
+}
